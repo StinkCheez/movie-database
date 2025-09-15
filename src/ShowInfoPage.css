@@ -1,0 +1,154 @@
+/* Add to MovieReviewPage.css or create ShowInfoPage.css */
+
+.show-info-container {
+  min-height: 100vh;
+  background: #fffbe6;
+  padding: 40px 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.show-info-back-btn {
+  margin-bottom: 24px;
+  background: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.show-info-main {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 32px;
+}
+
+.show-info-poster {
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
+  background: #eee;
+}
+
+.show-info-details {
+  flex: 1;
+}
+
+.show-info-title {
+  color: #f44336;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-shadow: 2px 2px 8px #fffbe6;
+}
+
+.show-info-type-year {
+  margin-bottom: 12px;
+  color: #b7e04a;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.show-info-genres {
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+}
+
+.show-info-overview {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  color: #222;
+  background: #fffbe6;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.show-info-rating {
+  font-size: 1.2rem;
+  color: #f44336;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.movie-review-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  padding: 0 32px;
+}
+
+.navbar-home-btn {
+  background: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  padding: 8px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(244,67,54,0.15);
+  transition: background 0.2s;
+  margin-right: -4px;
+}
+
+.navbar-home-btn:hover {
+  background: #b71c1c;
+}
+
+.navbar-search-form {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.navbar-search-input {
+  padding: 8px;
+  width: 100%;
+  min-width: 220px;
+  border: 2px solid #b7e04a;
+  border-radius: 0;
+  outline: none;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.navbar-search-btn {
+  background: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  padding: 8px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(244,67,54,0.15);
+  transition: background 0.2s;
+}
+
+.navbar-search-btn:hover {
+  background: #b71c1c;
+}
+
+@media (max-width: 900px) {
+  .show-info-main {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
+  .show-info-poster {
+    width: 220px;
+    height: 330px;
+    margin-bottom: 16px;
+  }
+}
